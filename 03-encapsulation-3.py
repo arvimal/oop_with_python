@@ -6,17 +6,18 @@
 # set_val(), get_val(), and increment_val().
 
 # set_val() helps to set a value, get_val() prints the value,
-# and increament_val() increments the set value by 1.
+# and increment_val() increments the set value by 1.
 
 # We can still break encapsulation here by calling 'self.value'
 # directly in an instance, which is **BAD**.
 
-# set_val() forces us to input an integer. Even if we break encapsulation
-# we're forced to call 'increment_val()` only if we have broken the
-# encapsulation by passing an integer. ie.. `increment_val() will
-# only work if we pass an int, be it by obeying encapsulation or
-# breaking it.
+# set_val() forces us to input an integer, ie.. what the code wants
+# to work properly. Here, it's possible to break the encapsulation by
+# calling 'self.val` directly, which will cause unexpected results later.
+# In this example, the code is written to enforce an intger as input, if we
+# don't break encapsulation and go through the gateway 'set_val()'
 
+# 
 class MyInteger(object):
     def set_val(self, val):
         try:
