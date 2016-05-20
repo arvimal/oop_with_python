@@ -11,7 +11,6 @@
 # prints/returns the value.
 
 
-
 class MyClass(object):
 
     def set_val(self, val):
@@ -20,7 +19,6 @@ class MyClass(object):
     def get_val(self):
         print(self.value)
         return self.value
-
 
 a = MyClass()
 b = MyClass()

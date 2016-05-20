@@ -36,8 +36,7 @@ class D(B, C):
     pass
 
 d_instance = D()
-
-d_instance.dothis()
+d_instance.dothis()  # <== This should print from class A.
 
 print("\nPrint the Method Resolution Order")
 print(D.mro())
