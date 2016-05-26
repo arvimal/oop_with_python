@@ -1,14 +1,67 @@
-# Python-OOP-Code
+# Object Oriented Programming using Python
 
-Scripts written as part of studying Object Oriented Programming concepts in Python.
+* Written as part of studying Object Oriented Programming concepts in Python.
 
-Examples include:
+[TOC]
 
-1. Encapsulation
-2. Inheritance
-3. Polymorphism
-4. Instance methods
-5. Multiple inheritance
-6. Class methods
-7. Instance methods
-8. and more...
+01. Classes
+02. Instances, Instance methods, Instance attributes
+03. Class attributes
+04. The __init__ constructor
+05. Inheritance (Inheriting {attributes,methods,constructors etc..})
+06. Encapsulation
+07. Polymorphism
+08. Instance methods
+09. Class methods
+10. Multiple Inheritance and how lookup works
+11. Method Resolution Order (MRO)
+12. Decorators
+13. Static methods
+14. Class methods
+
+
+# NOTES
+------------
+01. Classes
+
+------------
+02. Instances, Instance methods, Instance attributes
+
+------------
+03. Class attributes
+
+------------
+04. The __init__ constructor
+
+------------
+05. Inheritance (Inheriting {attributes,methods,constructors etc..})
+
+------------
+06. Encapsulation
+
+------------
+07. Polymorphism
+
+------------
+08. Instance methods
+
+------------
+09. Class methods
+
+-------------
+10. Multiple Inheritance and how lookup works
+
+-------------
+11. Method Resolution Order (MRO)
+
+--------------
+12. Decorators
+
+--------------
+13. Static methods
+
+--------------
+14. Class methods
+
+--------------
+15.
