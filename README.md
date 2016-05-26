@@ -47,8 +47,31 @@
 -------------
 #### 10. Multiple Inheritance and how lookup works
 
+* Any class can inherit from other classes.
+* Any python class can inherit from multiple classes at the same time.
+* The class that inherits another class is called the Base/Child class.
+* The class being inherited by the Child class is called the Parent class.
+* The child class inherits any methods and attributes defined in the parent classes.
+
 -------------
 #### 11. Method Resolution Order (MRO)
+
+* Python has a method lookup order, called `MRO` (Method Resolution Order)
+* The MRO path can be printed to stdout using `<class-name>.mro()`
+* Python, by default, uses a depth-first ordering while following MRO.
+
+* ie.. imaging you have four classes, A, B, C, D.
+
+  1. You instance is created from `D`.
+  2. `D` inherits from `B` and `C`
+  3. `B` inherits from `A`.
+  4. Both `C` and `A` has a method with the same name.
+  5. Since python follows a depth-first MRO, the method is called from `A`
+
+REFERENCE: Check the code examples in:
+  * 14-multiple-inheritance-1.py
+  * 15-multiple-inheritance-2.py
+  * 16-multiple-inheritance-3.py
 
 --------------
 #### 12. Decorators
