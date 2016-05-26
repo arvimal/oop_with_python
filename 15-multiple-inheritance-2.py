@@ -4,6 +4,7 @@
 
 # Python supports multiple inheritance
 # and uses a depth-first order when searching for methods.
+
 # This search pattern is call MRO (Method Resolution Order)
 
 # This is a second example, which shows the lookup of 'dothis()'.

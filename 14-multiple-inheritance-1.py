@@ -2,8 +2,8 @@
 
 # multiple-inheritance-1.py
 
-# Python supports multiple inheritance
-# and uses a depth-first order when searching for methods.
+# Python supports multiple inheritance and uses a depth-first order
+# when searching for methods.
 # This search pattern is call MRO (Method Resolution Order)
 
 # This is the first example, which shows the lookup of a common
