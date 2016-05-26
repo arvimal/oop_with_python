@@ -1,8 +1,4 @@
-# Object Oriented Programming using Python
-
-* Written as part of studying Object Oriented Programming concepts in Python.
-
-[TOC]
+# Object Oriented Programming in Python
 
 01. Classes
 02. Instances, Instance methods, Instance attributes
@@ -22,46 +18,46 @@
 
 # NOTES
 ------------
-01. Classes
+#### 01. Classes
 
 ------------
-02. Instances, Instance methods, Instance attributes
+#### 02. Instances, Instance methods, Instance attributes
 
 ------------
-03. Class attributes
+#### 03. Class attributes
 
 ------------
-04. The __init__ constructor
+#### 04. The __init__ constructor
 
 ------------
-05. Inheritance (Inheriting {attributes,methods,constructors etc..})
+#### 05. Inheritance (Inheriting {attributes,methods,constructors etc..})
 
 ------------
-06. Encapsulation
+#### 06. Encapsulation
 
 ------------
-07. Polymorphism
+#### 07. Polymorphism
 
 ------------
-08. Instance methods
+#### 08. Instance methods
 
 ------------
-09. Class methods
+#### 09. Class methods
 
 -------------
-10. Multiple Inheritance and how lookup works
+#### 10. Multiple Inheritance and how lookup works
 
 -------------
-11. Method Resolution Order (MRO)
+#### 11. Method Resolution Order (MRO)
 
 --------------
-12. Decorators
+#### 12. Decorators
 
 --------------
-13. Static methods
+#### 13. Static methods
 
 --------------
-14. Class methods
+#### 14. Class methods
 
 --------------
-15.
+#### 15.
