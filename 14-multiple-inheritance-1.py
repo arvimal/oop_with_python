@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# multiple-inheritance-1.py
+# 14-multiple-inheritance-1.py
 
 # Python supports multiple inheritance and uses a depth-first order
 # when searching for methods.

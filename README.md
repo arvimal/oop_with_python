@@ -52,13 +52,17 @@
 * The class that inherits another class is called the Base/Child class.
 * The class being inherited by the Child class is called the Parent class.
 * The child class inherits any methods and attributes defined in the parent classes.
+* Python uses a depth-first method resolution order (MRO) to fetch methods.
+* When two classes inherits from the same class, from Python2.3 onwards, the MRO omits the first occurrence of the class.
+* This new MRO lookup method applies from Python2.3, and is for the new-style classes.
+	*NOTE:* New style classes inherits from the 'object' parent class.
 
 -------------
 #### 11. Method Resolution Order (MRO)
 
 * Python has a method lookup order, called `MRO` (Method Resolution Order)
-* The MRO path can be printed to stdout using `<class-name>.mro()`
-* Python, by default, uses a depth-first ordering while following MRO.
+* The MRO path can be printed to stdout using `print <class-name>.mro()`
+* Python, by default, uses a depth-first lookup path for MRO.
 
 * ie.. Imagine you have four classes, A, B, C, D.
 

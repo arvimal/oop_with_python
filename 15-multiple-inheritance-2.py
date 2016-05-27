@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# multiple-inheritance-2.py
+# 15-multiple-inheritance-2.py
 
 # Python supports multiple inheritance
 
