@@ -3,16 +3,21 @@
 # multiple-inheritance-2.py
 
 # Python supports multiple inheritance
-# and uses a depth-first order when searching for methods.
+
+# It uses a depth-first order when searching for methods.
 # This search pattern is call MRO (Method Resolution Order)
 
 # This is a second example, which shows the lookup of 'dothis()'.
 # Both A and C contains 'dothis()'. Let's trace how the lookup happens.
 
-# As per the MRO output, it starts in class D, then B, A, and lastly C.
-# Starts looking in D, then moves to B, then to A.
-# A defines 'dothat' which is not what we're looking for.
-# Hence it goes back to D, then C, and finds it there.
+# As per the MRO output using depth-first search,
+# it starts in class D, then B, A, and lastly C.
+
+# Here we're looking for 'dothis()' which is defined in class `C`.
+# The lookup goes from D -> B -> A -> C.
+
+# Since class `A` doesn't have `dothis()`, the lookup goes back to class `C`
+# and finds it there.
 
 
 class A(object):

@@ -20,6 +20,8 @@
 # The MRO will show the full resolution path even if the full path is
 # not traversed.
 
+# The method lookup flow in this case is : D -> B -> A -> C
+
 class A(object):
 
     def dothis(self):
