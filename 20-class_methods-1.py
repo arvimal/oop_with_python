@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+# 19-class_methods-1.py
+
+# We're building this example from the previous one, ie.. 18-instance_methods-2.py.
+
+# Class methods 
+
+
 class InstanceCounter(object):
     count = 0
 

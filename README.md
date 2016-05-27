@@ -32,7 +32,7 @@
 ------------
 #### 05. Inheritance (Inheriting {attributes,methods,constructors etc..})
 
-------------
+-------------
 #### 06. Encapsulation
 
 ------------
@@ -42,10 +42,7 @@
 #### 08. Instance methods
 
 ------------
-#### 09. Class methods
-
--------------
-#### 10. Multiple Inheritance and how lookup works
+#### 09. Multiple Inheritance and method/attribute lookup 
 
 * Any class can inherit from other classes.
 * Any python class can inherit from multiple classes at the same time.
@@ -57,8 +54,8 @@
 * This new MRO lookup method applies from Python2.3, and is for the new-style classes.
 	*NOTE:* New style classes inherits from the 'object' parent class.
 
--------------
-#### 11. Method Resolution Order (MRO)
+------------
+#### 10. Method Resolution Order (MRO)
 
 * Python has a method lookup order, called `MRO` (Method Resolution Order)
 * The MRO path can be printed to stdout using `print <class-name>.mro()`
@@ -100,13 +97,16 @@ REFERENCE: Check the code example in:
   * 16-multiple-inheritance-3.py
 
 --------------
-#### 12. Decorators
+#### 11. Decorators
+
+--------------
+#### 12. Class methods
+
 
 --------------
 #### 13. Static methods
 
 --------------
-#### 14. Class methods
 
---------------
-#### 15.
+
+

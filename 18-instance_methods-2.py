@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# 17-instance_methods.py
+# 18-instance_methods.py
 
 # Instance methods are the normal way of accessing methods, seen in all
 # classes till now. ie.. by instantiating instances from a class, and
@@ -21,6 +21,9 @@
 
 # Since the instance is bound to the methods defined in the class by the
 # keyword `self`, we also call `Instance methods` as 'Bound methods'.
+
+# In the code below, the instance is `obj` (the iterator) and we access
+# each method as `obj.set_val()`, `obj.get_val()`, and `obj.get_count`.
 
 
 class InstanceCounter(object):
