@@ -1,17 +1,18 @@
 #!/usr/bin/env python
 
-# Decorators, as simple as it gets :)
-
 # Reference: Decorators 101 - A Gentle Introduction to Functional Programming.
 # By Jillian Munson - PyGotham 2014.
 # https://www.youtube.com/watch?v=yW0cK3IxlHc
 
-def my_decorator(my_function):
+
+import datetime
+
+
+def my_decorator(inner):
     def inner_decorator():
-        print("This happened before!")
-        my_function()
-        print("This happens after ")
-        print("This happened at the end!")
+        print(datetime.datetime.utcnow())
+        inner()
+        print(datetime.datetime.utcnow())
     return inner_decorator
 
 
@@ -19,5 +20,5 @@ def my_decorator(my_function):
 def decorated():
     print("This happened!")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     decorated()
