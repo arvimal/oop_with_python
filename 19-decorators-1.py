@@ -37,14 +37,15 @@ def my_decorator(my_function):    # <-- (4)
         print("This happens after ")    # <-- (10)
         print("This happened at the end!")    # <-- (11)
     return inner_decorator
+    #return None
 
 
 @my_decorator       # <-- (3)
-def decorated():    # <-- (2) <-- (8)
+def my_decorated():    # <-- (2) <-- (8)
     print("This happened!")   # <-- (9)
 
 if __name__ == '__main__':
-    decorated()    # <-- (1)
+    my_decorated()    # <-- (1)
 
 # This prints:
 # # python 19-decorators-1.py
