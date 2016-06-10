@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# 23-decorators-5.py 
+# 23-decorators-5.py
 
 # Reference : https://www.youtube.com/watch?v=bxhuLgybIro
 

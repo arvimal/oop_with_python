@@ -25,13 +25,16 @@ class A(object):
     def dothat(self):
         print("Doing this in A")
 
+
 class B(A):
     pass
+
 
 class C(object):
 
     def dothis(self):
         print("\nDoing this in C")
+
 
 class D(B, C):
     """Multiple Inheritance,

@@ -12,6 +12,7 @@
 # the method is private. It's called private or magic methods
 # since it's called internally and automatically.
 
+
 class MyNum(object):
     def __init__(self):
         print("Calling the __init__() constructor!\n")
@@ -24,6 +25,3 @@ class MyNum(object):
 dd = MyNum()
 dd.increment()  # will print 1
 dd.increment()  # will print 2
-
-
-

@@ -12,9 +12,11 @@
 # Hence, any instances created from the class `Time` can access
 # the methods defined in the parent class `Date`.
 
+
 class Date(object):
     def get_date(self):
         print("2016-05-14")
+
 
 class Time(Date):
     def get_time(self):
@@ -22,7 +24,7 @@ class Time(Date):
 
 # Creating an instance from `Date`
 dt = Date()
-dt.get_date()   #Accesing the `get_date()` method of `Date`
+dt.get_date()  # Accesing the `get_date()` method of `Date`
 print("--------")
 
 # Creating an instance from `Time`.

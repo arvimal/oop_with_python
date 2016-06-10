@@ -4,6 +4,8 @@
 
 # We add a test in the __init__() constructor to check
 # if 'value' is an int or not.
+
+
 class MyNum(object):
     def __init__(self, value):
         try:

@@ -4,7 +4,7 @@
 
 # Reference https://www.youtube.com/watch?v=Slf1b3yUocc
 
-# We have two functions, one which adds two numbers, 
+# We have two functions, one which adds two numbers,
 # and another which subtracts two numbers.
 
 # We apply the decorator @double which takes in the

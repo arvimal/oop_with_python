@@ -22,17 +22,21 @@
 
 # The method lookup flow in this case is : D -> B -> A -> C
 
+
 class A(object):
 
     def dothis(self):
         print("doing this in A")
 
+
 class B(A):
     pass
+
 
 class C(object):
     def dothis(self):
         print("doing this in C")
+
 
 class D(B, C):
     pass

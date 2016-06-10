@@ -17,7 +17,9 @@
 # In this example, the code is written to enforce an intger as input, if we
 # don't break encapsulation and go through the gateway 'set_val()'
 
-# 
+#
+
+
 class MyInteger(object):
     def set_val(self, val):
         try:
@@ -25,7 +27,6 @@ class MyInteger(object):
         except ValueError:
             return
         self.val = val
-
 
     def get_val(self):
         print(self.val)
@@ -49,10 +50,7 @@ print("\n")
 
 # Trying to break encapsulation in a new instance with a str
 b = MyInteger()
-b.val = "MyString" # <== Breaking encapsulation, works fine
+b.val = "MyString"  # <== Breaking encapsulation, works fine
 b.get_val()        # <== Prints the val set by breaking encap
 b.increment_val()  # This will fail, since str + int wont work
 print("\n")
-
-
-

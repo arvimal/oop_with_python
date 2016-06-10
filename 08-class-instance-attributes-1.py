@@ -9,6 +9,7 @@
 # it each time we create an instance. This can help count the
 # number of instances at the time of instantiation.
 
+
 class InstanceCounter(object):
     count = 0
 
@@ -32,5 +33,3 @@ c = InstanceCounter(15)
 for obj in (a, b, c):
     print("value of obj: %s" % obj.get_val())
     print("Count : %s" % obj.get_count())
-
-

@@ -19,6 +19,7 @@
 # the instance will only pick up the first hit,
 # ie.. from the 'class' and won't go to the parent class.
 
+
 class Animal(object):
 
     def __init__(self, name):
@@ -36,6 +37,7 @@ class Dog(Animal):
     def show_affection(self):
         print('{0} wags tail'.format(self.name))
 
+
 class Cat(Animal):
 
     def swatstring(self):
@@ -46,4 +48,3 @@ class Cat(Animal):
 
 for a in (Dog('Rover'), Cat('Fluffy'), Cat('Lucky'), Dog('Scout')):
     a.show_affection()
-

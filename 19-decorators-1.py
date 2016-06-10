@@ -37,7 +37,7 @@ def my_decorator(my_function):    # <-- (4)
         print("This happens after ")    # <-- (10)
         print("This happened at the end!")    # <-- (11)
     return inner_decorator
-    #return None
+    # return None
 
 
 @my_decorator       # <-- (3)

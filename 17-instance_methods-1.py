@@ -15,7 +15,7 @@ a = A()
 print(a.method)
 
 # The print() function will print the following :
-#  python 17-instance_methods-1.py 
+#  python 17-instance_methods-1.py
 # <bound method A.method of <__main__.A object at 0x7fc91d83e790>>
 
 # The output shows that 'method' is a bound method

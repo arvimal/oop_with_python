@@ -16,6 +16,7 @@
 # present in the instance, and hence the lookup goes a level above and gets it from
 # the class.
 
+
 class YourClass(object):
     classy = "class value"
 
@@ -25,8 +26,7 @@ print(dd.classy)  # < This should return the string "class value"
 dd.classy = "Instance value"
 print(dd.classy)    # This should return the string "Instance value"
 
-del dd.classy       # This will delete the value set for 'dd.classy' in the instance.
-print(dd.classy)    # Since the overriding attribute was deleted, this will print 'class value'.
-
-
-
+# This will delete the value set for 'dd.classy' in the instance.
+del dd.classy
+# Since the overriding attribute was deleted, this will print 'class value'.
+print(dd.classy)

@@ -8,8 +8,8 @@
 # Here, the `decorated()` function takes an argument
 # and prints it back on terminal.
 
-# When the decorator `@my_decorator` is called, it 
-# takes the function `decorated()` as its argument, and 
+# When the decorator `@my_decorator` is called, it
+# takes the function `decorated()` as its argument, and
 # the argument of `decorated()` as the argument of `inner_decorator()`.
 # Hence the arg `number` is passed to `num_copy`.
 
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     decorated(5)
 
 # This prints:
-# python 21-decorators-3.py 
+# python 21-decorators-3.py
 # 2016-05-29 12:11:57.212125
 # This happened : 6
 # 2016-05-29 12:11:57.212168
