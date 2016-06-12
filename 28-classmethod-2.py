@@ -2,6 +2,8 @@
 
 # 28-classmethod-2.py
 
+# Reference: https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
+
 # Classmethods are decorators which are inbuilt in Python.
 # We decorate a function as a classemethod using the decorator
 # @classmethod.
@@ -13,12 +15,12 @@
 # which need necessarily
 
 
-class InstanceCounter(object):
+class MyClass(object):
     count = 0
 
     def __init__(self, val):
         self.val = val
-        InstanceCounter.count += 1
+        MyClass.count += 1
 
     def set_val(self, newval):
         self.val = newval
@@ -30,14 +32,14 @@ class InstanceCounter(object):
     def get_count(cls):
         return cls.count
 
-a = InstanceCounter(10)
-print("\nValue of object : %s" % a.get_val())
-print(InstanceCounter.get_count())
+object_1 = MyClass(10)
+print("\nValue of object : %s" % object_1.get_val())
+print(MyClass.get_count())
 
-b = InstanceCounter(20)
-print("\nValue of object : %s" % b.get_val())
-print(InstanceCounter.get_count())
+object_2 = MyClass(20)
+print("\nValue of object : %s" % object_2.get_val())
+print(MyClass.get_count())
 
-c = InstanceCounter(40)
-print("\nValue of object : %s" % c.get_val())
-print(InstanceCounter.get_count())
+object_3 = MyClass(40)
+print("\nValue of object : %s" % object_3.get_val())
+print(MyClass.get_count())

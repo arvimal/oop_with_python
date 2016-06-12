@@ -14,6 +14,16 @@
 
 # The following example is a very simple explanation of class-methods.
 
+# class_1() is a class method while class_2() is an instance method.
+
+# Class methods can be accessed by the class as well as the instance.
+
+# Instance methods can only be accessed by the Instance. That's why in this example, MyClass.class_2() will fail with an error.
+
+# NOTE : For the class MyClass:
+# 	MyClass is the class itself
+#	MyClass() is an instance
+
 
 class MyClass(object):
     @classmethod
