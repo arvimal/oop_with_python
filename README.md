@@ -99,11 +99,10 @@ REFERENCE: Check the code example in:
 #### 11. Decorators
 
 --------------
-#### 12. Class methods
-
+#### 12. Static methods
 
 --------------
-#### 13. Static methods
+#### 13. Class methods
 
 --------------
 
