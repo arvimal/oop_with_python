@@ -9,17 +9,17 @@
 # But decorators can be applied to Classes as well.
 # This example deals with class decorators.
 
-# NOTE: If you need to decorate a Class, you'll need the
-# decorator function to return a Class.
+# NOTE: If you are creating a decorator for a class, you'll it 
+# to return a Class.
 
-# NOTE: If you need to decorate a Function, you'll need
-# the decorator function to return a function.
+# NOTE: Similarly, if you are creating a decorator for a function,
+# you'll need it to return a function.
 
 
 def honirific(cls):
     class HonirificCls(cls):
         def full_name(self):
-            return "Dr. " + super(HonirificCls, self).full_name
+            return "Dr. " + super(HonirificCls, self).full_name()
     return HonirificCls
 
 
