@@ -23,10 +23,28 @@
 #### 02. Instances, Instance methods, Instance attributes
 
 ------------
-#### 03. Class attributes
+#### 03. Class attributes 
+
+Attributes or methods specific to a class are called Class attributes 
+
+Example:
+
+~~~
+class MyClass(object):
+    value = 10
+    
+    def __init__(self):
+        pass
+~~~
+
+Here `value` is a class attribute. These are used when certain values need to be set outside a function.
 
 ------------
 #### 04. The __init__ constructor
+
+The __init__() constructor is a magic method which gets called when a class is instantiated. 
+
+Any attributes set under the __init__() constructor will be instantiated at the time of instance creation.
 
 ------------
 #### 05. Inheritance (Inheriting {attributes,methods,constructors etc..})
