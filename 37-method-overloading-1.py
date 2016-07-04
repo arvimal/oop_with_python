@@ -6,51 +6,51 @@
 # http://shop.oreilly.com/product/0636920040057.do
 # Chapter 24 : Method Overloading - Extending and Providing
 
-# This code is an example on how we can extend a method
-# defined in a Parent class, in the Child class.
+# This code is an example on how we can extend a method inherited by 
+# a child class from the Parent class. 
 
-# 1) We have defined `GetSetParent()` as an abstract class,
-# and it has three methods, set_val(), get_val(), and showdoc().
-# 2) GetSetInt() inherits from GetSetParent() 
-# 3) GetSetInt() extends the parent's set_val() method
-# by it's own set_val() method. It checks for the input,
-# checks if it's an integer, and then calls the set_val()
+# 1) We have defined `MyClass()` as an abstract class,
+# and it has three methods, my_set_val(), my_get_val(), and print_doc().
+# 2) MyChildClass() inherits from MyClass() 
+# 3) MyChildClass() extends the parent's my_set_val() method
+# by it's own my_set_val() method. It checks for the input,
+# checks if it's an integer, and then calls the my_set_val()
 # method in the parent.
 
-# 4) The showdoc() method in the Parent is an abstract method
-# and hence should be implemented in the child class GetSetInt()
+# 4) The print_doc() method in the Parent is an abstract method
+# and hence should be implemented in the child class MyChildClass()
 
 
 import abc
 
 
-class GetSetParent(object):
+class MyClass(object):
 
     __metaclass__ = abc.ABCMeta
 
-    def __init__(self, value):
-        self.val = 0
+    def my_set_val(self, value):
+        self.value = value
 
-    def set_val(self, value):
-        self.val = value
-
-    def get_val(self):
-        return self.val
+    def my_get_val(self):
+        return self.value
 
     @abc.abstractmethod
-    def showdoc(self):
+    def print_doc(self):
         return
 
 
-class GetSetInt(GetSetParent):
+class MyChildClass(MyClass):
 
-    def set_val(self, value):
+    def my_set_val(self, value):
         if not isinstance(value, int):
             value = 0
-        super(GetSetInt, self).set_val(self)
+        super(MyChildClass, self).my_set_val(self)
 
-    def showdoc(self):
-        print("GetSetInt object {0}), only accepts integer values".format(
-            id(self)))
+    def print_doc(self):
+        print("Documentation for MyChild Class")
 
+my_instance = MyChildClass()
+my_instance.my_set_val(100)
+print(my_instance.my_get_val())
+print(my_instance.print_doc())
 
