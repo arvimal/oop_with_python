@@ -19,6 +19,10 @@
 ------------
 #### 01. Classes
 
+Classes are the building blocks in Object Oriented Programming. 
+
+Classes can be seen as blueprints from which you create your Instances. 
+
 ------------
 #### 02. Instances, Instance methods, Instance attributes
 
