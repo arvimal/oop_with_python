@@ -33,13 +33,13 @@ Attributes or methods specific to a class are called Class attributes
 
 Example:
 
-~~~
+```
 class MyClass(object):
     value = 10
     
     def __init__(self):
         pass
-~~~
+```
 
 Here `value` is a class attribute. These are used when certain values need to be set outside a function.
 
@@ -127,6 +127,10 @@ REFERENCE: Check the code example in:
 #### 13. Class methods
 
 --------------
+
+#### 14. Magic methods
+
+Magic methods 
 
 
 
