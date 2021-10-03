@@ -22,6 +22,7 @@ class MyNum(object):
         self.val = self.val + 1
         print(self.val)
 
+
 dd = MyNum()
 dd.increment()  # will print 1
 dd.increment()  # will print 2

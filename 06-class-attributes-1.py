@@ -15,10 +15,11 @@ class YourClass(object):
     def set_val(self):
         self.insty = 100
 
+
 dd = YourClass()
-dd.classy   # This will fetch the class attribute 10.
+dd.classy  # This will fetch the class attribute 10.
 dd.set_val()
-dd.insty    # This will fetch the instance attribute 100.
+dd.insty  # This will fetch the instance attribute 100.
 
 # Once `dd` is instantiated, we can access both the class and instance
 # attributes, ie.. dd.classy and dd.insty.

@@ -31,5 +31,6 @@ class D(B, C):
         print("D")
         super(D, self).foo()
 
+
 d = D()
 d.foo()

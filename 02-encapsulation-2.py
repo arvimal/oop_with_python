@@ -17,12 +17,13 @@ class MyClass(object):
     def get_val(self):
         print(self.value)
 
+
 a = MyClass()
 b = MyClass()
 
 a.set_val(10)
 b.set_val(1000)
-a.value = 100    # <== Overriding `set_value` directly
+a.value = 100  # <== Overriding `set_value` directly
 # <== ie..  Breaking encapsulation
 
 a.get_val()

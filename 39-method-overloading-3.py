@@ -9,7 +9,6 @@
 
 
 class MyList(list):
-
     def __getitem__(self, index):
         if index == 0:
             raise IndexError
@@ -24,15 +23,16 @@ class MyList(list):
             index -= 1
         list.__setitem__(self, index, value)
 
-x = MyList(['a', 'b', 'c'])
+
+x = MyList(["a", "b", "c"])
 print(x)
 print("-" * 10)
 
-x.append('d')
+x.append("d")
 print(x)
 print("-" * 10)
 
-x.__setitem__(4, 'e')
+x.__setitem__(4, "e")
 print(x)
 print("-" * 10)
 

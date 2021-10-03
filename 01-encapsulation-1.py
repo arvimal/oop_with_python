@@ -12,13 +12,13 @@
 
 
 class MyClass(object):
-
     def set_val(self, val):
         self.value = val
 
     def get_val(self):
-        #print(self.value)
+        # print(self.value)
         return self.value
+
 
 a = MyClass()
 b = MyClass()

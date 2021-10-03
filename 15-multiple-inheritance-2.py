@@ -21,7 +21,6 @@
 
 
 class A(object):
-
     def dothat(self):
         print("Doing this in A")
 
@@ -31,7 +30,6 @@ class B(A):
 
 
 class C(object):
-
     def dothis(self):
         print("\nDoing this in C")
 
@@ -39,7 +37,9 @@ class C(object):
 class D(B, C):
     """Multiple Inheritance,
     D inheriting from both B and C"""
+
     pass
+
 
 d_instance = D()
 

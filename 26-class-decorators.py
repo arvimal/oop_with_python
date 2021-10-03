@@ -9,7 +9,7 @@
 # But decorators can be applied to Classes as well.
 # This example deals with class decorators.
 
-# NOTE: If you are creating a decorator for a class, you'll it 
+# NOTE: If you are creating a decorator for a class, you'll it
 # to return a Class.
 
 # NOTE: Similarly, if you are creating a decorator for a function,
@@ -20,6 +20,7 @@ def honirific(cls):
     class HonirificCls(cls):
         def full_name(self):
             return "Dr. " + super(HonirificCls, self).full_name()
+
     return HonirificCls
 
 
@@ -31,6 +32,7 @@ class Name(object):
 
     def full_name(self):
         return " ".join([self.first_name, self.last_name])
+
 
 result = Name("Vimal", "A.R").full_name()
 print("Full name: {0}".format(result))

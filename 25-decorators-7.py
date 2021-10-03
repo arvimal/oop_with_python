@@ -15,6 +15,7 @@
 def double(my_func):
     def inner_func(a, b):
         return 2 * my_func(a, b)
+
     return inner_func
 
 

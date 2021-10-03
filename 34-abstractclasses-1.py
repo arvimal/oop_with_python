@@ -33,13 +33,13 @@ class My_ABC_Class(object):
     def get_val(self):
         return
 
+
 # Abstract Base Class defined above ^^^
 
 # Custom class inheriting from the above Abstract Base Class, below
 
 
 class MyClass(My_ABC_Class):
-
     def set_val(self, input):
         self.val = input
 
@@ -51,6 +51,7 @@ class MyClass(My_ABC_Class):
     def hello(self):
         print("\nCalling the hello() method")
         print("I'm *not* part of the Abstract Methods defined in My_ABC_Class()")
+
 
 my_class = MyClass()
 

@@ -20,5 +20,5 @@ class MyNum(object):
 
 
 a = MyNum(10)
-a.increment()   # This should print 11
-a.increment()   # This should print 12
+a.increment()  # This should print 11
+a.increment()  # This should print 12

@@ -5,6 +5,7 @@ def decorator(inner):
     def inner_decorator(*args, **kwargs):
         print("This function takes " + str(len(args)) + " arguments")
         inner(*args)
+
     return inner_decorator
 
 

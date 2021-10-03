@@ -27,7 +27,6 @@ class MyClass(object):
 
 
 class MyChildClass(MyClass):
-
     def my_set_val(self, value):
         if not isinstance(value, int):
             value = 0
@@ -35,6 +34,7 @@ class MyChildClass(MyClass):
 
     def print_doc(self):
         print("Documentation for MyChild Class")
+
 
 my_instance = MyChildClass()
 my_instance.my_set_val(100)

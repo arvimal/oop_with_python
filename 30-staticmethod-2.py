@@ -28,6 +28,7 @@ class MyClass(object):
     def status():
         print("The total number of instances are ", MyClass.count)
 
+
 print(MyClass.count)
 
 my_func_1 = MyClass("MyClass 1")

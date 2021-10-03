@@ -32,6 +32,7 @@ class MyClass(object):
     def get_count(cls):
         return cls.count
 
+
 object_1 = MyClass(10)
 print("\nValue of object : %s" % object_1.get_val())
 print(MyClass.get_count())

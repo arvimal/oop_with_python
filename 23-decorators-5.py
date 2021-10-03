@@ -14,6 +14,7 @@ def handle_exceptions(func_name):
             return func_name(*args, **kwargs)
         except Exception:
             print("An exception was thrown : ", Exception)
+
     return inner
 
 
@@ -21,5 +22,6 @@ def handle_exceptions(func_name):
 @handle_exceptions
 def divide(x, y):
     return x / y
+
 
 print(divide(8, 0))

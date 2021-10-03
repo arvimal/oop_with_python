@@ -16,6 +16,7 @@
 # But the instance created from 'Cat' cannot access the attributes
 # within the 'Dog' class, and vice versa.
 
+
 class Animal(object):
     def __init__(self, name):
         self.name = name
@@ -23,13 +24,16 @@ class Animal(object):
     def eat(self, food):
         print("%s is eating %s" % (self.name, food))
 
+
 class Dog(Animal):
     def fetch(self, thing):
         print("%s goes after the %s" % (self.name, thing))
 
+
 class Cat(Animal):
     def swatstring(self):
         print("%s shred the string!" % self.name)
+
 
 d = Dog("Roger")
 c = Cat("Fluffy")

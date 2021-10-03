@@ -26,6 +26,7 @@ class InstanceCounter(object):
     def get_count(self):
         print(InstanceCounter.count)
 
+
 a = InstanceCounter(5)
 b = InstanceCounter(10)
 c = InstanceCounter(15)

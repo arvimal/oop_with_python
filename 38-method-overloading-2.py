@@ -41,5 +41,8 @@ class GetSetList(GetSetParent):
         self.vallist.append(value)
 
     def showdoc(self):
-        print("GetSetList object, len {0}, store history of values set".format(
-            len(self.vallist)))
+        print(
+            "GetSetList object, len {0}, store history of values set".format(
+                len(self.vallist)
+            )
+        )

@@ -22,7 +22,7 @@
 
 # NOTE : For the class MyClass:
 # 	MyClass is the class itself
-#	MyClass() is an instance
+# 	MyClass() is an instance
 
 
 class MyClass(object):
